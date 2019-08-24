@@ -1,84 +1,73 @@
-
 .app{
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}  
-.login-signup-div{
-  /* background-color:black; */
-  border: 1px solid gray;
-  width: 60%;
-  min-width: 500px;
-  height: 60%;
-  min-height: 300px;
+}
+
+.formBox{
+  border: 1px solid;
+  width: 50%;
+  height: 50%;
+  min-height: 400px;
+  padding: 2px;
+  
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.tab-content>.active{
-opacity: 1;
-}
-
-.signup-container, .login-container {
-    max-height: 65vh;
-    overflow-y: auto;
-}
-.nav{
-  width: 100%;
-  height: 90%;
-  display: flex;
-  justify-content: space-between;
-  height: 10%;
-}
-
-.nav a{
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  color: black
-}
-
-.nav a[aria-selected="true"]{
-  background: black;
-  color: white
-}
-
-.signupForm{
-  display: flex;
-  flex-direction: column;
+  
 }
 
 .loginForm{
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.nav{
+  border-bottom: 0;
+}
+
+.nav a{
+  width: 25%;
+  /* border-radius: 10px 10px 0 0; */
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  background-color: lightblue;
+  /* border-radius: 2rem 2rem 0 0; */
+  outline: none;
+}
+
+.nav-item [aria-selected="true"]{
+  background-color: lightblue;
+}
+
+.tab-content>.active{
+  opacity: 1;
+  background-color: lightblue;
 }
 
 .tab-content{
-  width: 90%;
+  height: 100%;
+  
 }
 
-label{
-  padding: 10px;
-  padding-left: 0
+.tab-pane{
+  height: 100%;
+  /* border-radius: 0 0 2rem 2rem; */
+  padding-top: 20px;
+  padding: 20px  15% 0 15%;
 }
 
-input{
-  padding: 10px;
-}
-
-.submitBtn{
-  margin-top: 5%;
-  background-color: #000;
-  color: #fff;
-}
-
-.signupToggle{
-  padding-top: 2%;
-  color:black
+.form-label{
+  font-size: 1.2rem;
 }
