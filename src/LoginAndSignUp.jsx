@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { Tab, Tabs, Button, Form } from "react-bootstrap";
 
-class HomePage extends Component {
+class LoginAndSignUp extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -13,7 +13,6 @@ class HomePage extends Component {
   toggle(key) {
     this.setState({ activeItem: key })
   };
-
 
   render() {
     return (<div className="formBox">
@@ -63,4 +62,4 @@ class HomePage extends Component {
   }
 }
 
-export default HomePage;
+export default LoginAndSignUp;

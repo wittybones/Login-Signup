@@ -48,7 +48,7 @@
 
 .main {
   width: 100%;
-  min-height: calc(100vh - 130px);
+  min-height: calc(100vh - 200px);
   font-size: 0.8em;
   /* margin-top: 2px; */
   /* display: flex; */
@@ -98,3 +98,6 @@
   align-items: center;
 }
 
+.cursorDefault:hover{
+  cursor: default;
+}
